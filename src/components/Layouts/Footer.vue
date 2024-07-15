@@ -77,7 +77,7 @@
               </li>
               <li>
                 <a :href="'https://www.upi.edu/about'" target="_blank"
-                  >Magister pendidikan geografi UPI</a
+                  >Magister Pendidikan Geografi</a
                 >
               </li>
             </ul>
@@ -112,8 +112,8 @@
         </div>
         <div class="col-sm-6 col-lg-3">
           <div class="single-footer-widget">
-            <h3>Contact Us</h3>
-            <ul class="address-info">
+            <h3 class="ps-3">Contact Us</h3>
+            <ul class="address-info ps-3">
               <li>
                 <i class="bi-telephone-outbound"></i>
                 <a :href="'tel:+6285262608383'" target="_blank"
@@ -134,10 +134,11 @@
           </div>
         </div>
       </div>
+      <center>
       <div class="copyright-style-area">
         <div class="row align-items-center">
-          <div class="col-lg-6 col-md-6">
-            <div class="copyright-item">
+          <div class="">
+            <div class="copyright-item"> 
               <p>
                 &copy; Copyright {{ currentYear }} By
                 <a href="#">Supporter.C</a>
@@ -146,6 +147,7 @@
           </div>
         </div>
       </div>
+    </center>
     </div>
   </footer>
 </template>

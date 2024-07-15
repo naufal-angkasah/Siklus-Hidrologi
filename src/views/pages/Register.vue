@@ -4,14 +4,14 @@
   <Preloader v-if="isLoading" />
   <div class="begregis ptb-100 bounceInDown">
     <!-- <template> -->
-    <div class="container-fluid">
-      <div class="row mt-lg-n10 mt-md-n11 mt-n10 justify-content-center">
-        <div class="col-xl-8 col-lg-5 col-md-7 mx-auto">
+    <div class="container-fluid overview-content">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-12 ">
           <div class="card0 z-index-0">
-            <div class="card-header text-center pt-4">
+            <div class="card-header text-center">
               <h4 class="roboto-regular">REGISTER</h4>
             </div>
-            <div class="card-body" style="font-size: 1.2em">
+            <div class="card-body p-3" style="font-size: 1.2em">
               <b-form
                 class="p-3"
                 @submit="onSubmit"
@@ -214,26 +214,25 @@
                   >
                 </p>
               </div>
-              <!-- <b-card class="mt-3" header="Form Data Result">
-                <pre class="m-0">{{ form }}</pre>
-                {{ datas }}
-              </b-card> -->
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <fuuter />
 </template>
 
 <script>
 import axios from 'axios'
 import { uuid } from 'vue-uuid'
+import fuuter from '@/components/Layouts/Footer.vue'
 import Preloader from '@/components/Layouts/Preloader'
 export default {
   name: 'Register',
   components: {
     Preloader,
+    fuuter,
   },
   data() {
     return {

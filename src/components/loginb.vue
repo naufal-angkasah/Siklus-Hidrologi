@@ -8,79 +8,16 @@
     <div class="begron ptb-100 rubberBand">
       <div class="container-fluid">
         <div class="row align-items-center">
-          <div class="col-lg-8 col-md-12">
-            <div class="overview-content">
-              <div
-                class="card6 tracking-in-expand-fwd-top"
-                style="padding-top: 10px"
-              >
-                <center>
-                  <div>
-                    <p1 style="color: white">SELAMAT DATANG</p1>
-                  </div>
-                  <p2
-                    style="color: white; text-shadow: rgb(0, 0, 0) 2px 2px 2px"
-                    >Siswa-siswi terbaik bangsa,</p2
-                  >
-                </center>
-                <center>
-                  <table
-                    style="
-                      th,
-                      td {
-                        padding: 15px;
-                        text-align: left;
-                      }
-                      padding-left: 50px;
-                    "
-                  >
-                    <tr>
-                      <td style="padding: 1ch; padding-top: 35px">
-                        <p3 style="text-shadow: rgb(0, 0, 0) 2px 2px 2px"
-                          >di</p3
-                        >
-                      </td>
-                      <td>
-                        <h11
-                          style="
-                            color: white;
-                            text-shadow: rgb(0, 0, 0) 2px 2px 2px;
-                          "
-                          >E-MODUL</h11
-                        >
-                      </td>
-                    </tr>
-                  </table>
-                </center>
-                <center>
-                  <h11
-                    style="color: white; text-shadow: rgb(0, 0, 0) 2px 2px 2px"
-                    >SIKLUS HIDROLOGI</h11
-                  >
-                  <br />
-                  <p2
-                    style="color: white; text-shadow: rgb(0, 0, 0) 2px 2px 2px"
-                    >Terintegrasi Ayat-Ayat Al Quran</p2
-                  >
-                  <h6
-                    style="color: white; text-shadow: rgb(0, 0, 0) 2px 2px 2px"
-                  >
-                    Muhammad Khairul - Class of 2022<br />Master Pendidikan
-                    Geografi<br />Universitas Pendidikan Indonesia
-                  </h6>
-                </center>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-12">
+          <div class="col-lg-1 col-md-12" style="padding-left: 130px;"></div>
+          <div class="col-lg-3 col-md-12">
             <div
               class="row align-items-center overview-content"
-              style="padding-right: 10px; padding-left: 10px"
             >
               <div class="card0 z-index-0">
-                <div class="card-header text-center pt-4">
+                <div class="card-header pt-4 p-4">
+                  <h4 class="roboto-regular">Selamat Datang</h4>
                   <br />
-                  <h4 class="roboto-regular">LOGIN</h4>
+                  <p>Masukkan email dan password untuk login akun Kamu.</p>
                 </div>
                 <div class="card-body p-3" style="font-size: 1.2em">
                   <b-form
@@ -91,10 +28,8 @@
                   >
                     <!-- email -->
                     <b-row class="my-2">
-                      <b-col sm="3">
-                        <label for="`type-email`"><code>Email</code>:</label>
-                      </b-col>
-                      <b-col sm="9">
+                 
+                      <b-col sm="12">
                         <b-form-input
                           trim
                           id="type-email"
@@ -129,12 +64,8 @@
                     </b-row>
                     <!-- password -->
                     <b-row class="my-2">
-                      <b-col sm="3">
-                        <label for="type-password"
-                          ><code>Password</code>:</label
-                        >
-                      </b-col>
-                      <b-col sm="9">
+                 
+                      <b-col sm="12">
                         <b-form-input
                           id="type-password"
                           v-model="form.password"
@@ -163,8 +94,10 @@
                       </b-col>
                     </b-row>
                     <br />
+                    <div class="d-grid gap-2">
                     <CButton
                       color="primary"
+                    
                       @click="
                         () => {
                           visibleScrollableDemo = true
@@ -172,6 +105,7 @@
                       "
                       >Login</CButton
                     >
+                  </div>
                     <CModal
                       scrollable
                       size="lg"
@@ -280,10 +214,10 @@
                     <!-- <b-button type="reset" variant="danger">Reset</b-button> -->
                   </b-form>
                   <div class="px-1 pt-2 text-center card-footer px-lg-2">
-                    <p class="mx-auto mb-4 text-sm">
-                      Tidak Punya Akun?
+                    <p class="mx-auto mb-4 text-sm" style="color: black;">
+                      Belum Punya Akun?
                       <a href="/register" class="text-gradient font-weight-bold"
-                        >Daftar</a
+                        >Register</a
                       >
                     </p>
                   </div>
@@ -291,16 +225,38 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-12 col-md-12">
+          <div class="col-lg-6 col-md-12" style="padding-left: 220px; padding-top: 100px;">
+            <div class="overview-content">
+              <div
+                class="card6 tracking-in-expand-fwd-top"
+                style="padding-top: 10px"
+              >
+                  <h4
+                    style="color: white; font-weight: 700; letter-spacing: 3px;
+word-spacing: 1.4px;"
+                    >Siswa-Siswi terbaik bangsa, di E-Modul SiklusHidrologi Terintegrasi Ayat Al-Qur'an.</h4>
+                  <p
+                    style="color: white; font-weight: 200;"
+                  >
+                  Temukan materi yang menarik dan bermanfaat tentang siklus
+                    air ini. Selamat belajar dan mari eksplorasi pengetahuan
+                    bersama!
+            </p>
+            
+              </div>
+            </div>
+          </div>
+         
+          <div class="col-lg-12 col-md-12"  style="padding-left: 130px;">
             <div class="overview-content">
               <div class="card6" style="padding-top: 10px">
-                <center>
-                  <p4 style="text-shadow: rgb(0, 0, 0) 2px 2px 2px"
-                    >Temukan materi yang menarik dan bermanfaat tentang siklus
-                    air ini. Selamat belajar dan mari eksplorasi pengetahuan
-                    bersama!</p4
+              
+                  <p style=" font-weight: 200; color: white;"
+                    >
+                    Muhammad Khairul - Class of 2022<br />Master Pendidikan
+                    Geografi<br />Universitas Pendidikan Indonesia</p
                   >
-                </center>
+            
               </div>
             </div>
           </div>
