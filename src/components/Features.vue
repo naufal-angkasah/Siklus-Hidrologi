@@ -43,9 +43,9 @@
 
 .cardx {
   border: none;
-  box-shadow: 5px 6px 6px 2px #e9ecef;
+  box-shadow: 5px 6px 6px 2px  rgba(236, 236, 249, 0.3);
   border-radius: 4px;
-  background-color: ghostwhite;
+  background-color: rgb(243, 243, 243, 0.5);
 }
 
 .dots {
@@ -113,21 +113,9 @@
           class="headings d-flex justify-content-between align-items-center mb-3 jackInTheBox"
         >
           <div class="card4">
-            <h5>Komentar ({{ Komentar.length }})</h5>
+            <h5 style="color: white">Komentar ({{ Komentar.length }})</h5>
           </div>
-          <div class="buttons">
-            <span class="badge bg-white d-flex flex-row align-items-center">
-              <span class="text-primary">Comments "ON"</span>
-              <div class="form-check form-switch">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="flexSwitchCheckChecked"
-                  checked
-                />
-              </div>
-            </span>
-          </div>
+
           <!-- </div> -->
         </div>
       </div>
@@ -149,7 +137,7 @@
                   >{{ komen.username }}
                 </small>
                 <br />
-                <small class="font-weight-bold">
+                <small class="font-weight-bold text-dark">
                   {{ komen.komentar }}
                 </small>
               </span>

@@ -9899,7 +9899,7 @@ button:focus {
   font-size: 40px;
 }
 .four-expect-area {
-  background-image: url(../assets/img/Background3.jpg);
+  background-image: url(../assets/baru/komen.png);
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -10185,18 +10185,10 @@ button:focus {
   border-radius: 5px;
 }
 .bgmix {
-  background-color: hsla(204, 73%, 52%, 1);
-  background-image: radial-gradient(
-      at 40% 20%,
-      hsla(164, 14%, 64%, 1) 0px,
-      transparent 50%
-    ),
-    radial-gradient(at 80% 0%, hsla(189, 100%, 56%, 1) 0px, transparent 50%),
-    radial-gradient(at 7% 61%, hsla(355, 100%, 93%, 1) 0px, transparent 50%),
-    radial-gradient(at 90% 41%, hsla(212, 1%, 27%, 1) 0px, transparent 50%),
-    radial-gradient(at 0% 100%, hsla(195, 35%, 33%, 1) 0px, transparent 50%),
-    radial-gradient(at 80% 100%, hsla(242, 100%, 70%, 1) 0px, transparent 50%),
-    radial-gradient(at 0% 0%, hsla(163, 100%, 56%, 1) 0px, transparent 50%);
+  background-image: url(../assets/baru/post.png);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 /* .Order-bg {
   background-image: url(../assets/img/img-bg-3.jpg);
@@ -10524,10 +10516,20 @@ button:focus {
   bottom: 0;
   z-index: -1;
 }
+.vide {
+  width: 65%;
+  height: auto;
+  border-radius: 10px;
+  padding-top: 50px;
+  @media only screen and (max-width: 991px) {
+    width: 100%;
+    height: auto;
+  }
+}
 .overview-area {
-  background-image: url(../assets/img/BackGround-no-1.jpeg);
-  background-position: 50%;
-  background-size: cover;
+  background-image: url(../assets/baru/Overview.jpg);
+  background-position: 20%;
+  background-size: 100%;
   background-repeat: no-repeat;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -10588,9 +10590,9 @@ button:focus {
 }
 
 .card {
-  box-shadow: 0 10px 18px 0 #f9fafb;
+ 
   transition: 0.3s;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.35);
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
@@ -10601,7 +10603,7 @@ button:focus {
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 10px;
-  border: 5px solid rgba(67, 174, 250, 0.48);
+  /* border: 5px solid rgba(67, 174, 250, 0.48); */
 }
 .card:hover {
   box-shadow: 15px 15px 15px 0 rgba(0, 0, 0, 0.35);
@@ -10635,9 +10637,9 @@ button:focus {
 }
 
 .card4 {
-  box-shadow: 0 10px 18px 0 #f9fafb;
+  
   transition: 0.3s;
-  background-color: rgba(255, 255, 255, 0.75);
+  /* background-color: rgba(255, 255, 255, 0.5); */
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
@@ -10649,7 +10651,7 @@ button:focus {
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 10px;
-  border: 3px solid rgba(67, 174, 250, 0.18);
+  /* border: 3px solid rgba(67, 174, 250, 0.18); */
 }
 .card4:hover {
   box-shadow: 15px 15px 15px 0 rgba(0, 0, 0, 0.35);
@@ -10676,21 +10678,21 @@ button:focus {
   box-shadow: 15px 15px 15px 0 rgba(0, 0, 0, 0.35);
 }
 .card3 {
-  box-shadow: 0 10px 18px 0 #f9fafb;
+  /* box-shadow: 0 10px 18px 0 #f9fafb; */
   transition: 0.3s;
   /* background-color: rgba(255,255,255,0.55); */
-  padding-left: 10px;
+  padding-left: 20px;
   padding-right: 10px;
   padding-bottom: 30px;
   padding-top: 15px;
   border-radius: 30px;
   margin-top: 50px;
   align-items: left;
-  background: rgba(76, 210, 224, 0.15);
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 10px;
-  border: 3px solid rgba(67, 174, 250, 0.18);
+  background: transparent;
+  /* backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(10px); */
+  /* border-radius: 10px;
+  border: 3px solid rgba(67, 174, 250, 0.18); */
 }
 .card3:hover {
   box-shadow: 15px 15px 15px 0 rgba(0, 0, 0, 0.35);
@@ -10787,7 +10789,7 @@ aside .social-media li a:hover {
 .overview-content .sub-title {
   display: inline-block;
   margin-bottom: 15px;
-  color: #d42953;
+  color: #0061F5;
 }
 .overview-content h1 {
   font-size: 80px;
@@ -10918,21 +10920,28 @@ aside .social-media li a:hover {
   border: 1px solid #00c195;
 }
 .process-style-area1 {
-  background-image: url(../assets/img/Background-no2.jpeg);
+  background-image: url(../assets/baru/informasi.jpg);
   /* background-color: #f3f5e7; */
-  background-position: 100%;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.process-style-area11 {
+  background-image: url(../assets/baru/profile.jpg);
+  /* background-color: #f3f5e7; */
+  background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .process-style-area2 {
-  background-image: url(../assets/img/Background3.jpg);
+  background-image: url(../assets/baru/Kegiatan.png);
   /* background-color: #f3f5e7; */
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .process-style-area3 {
-  background-image: url(../assets/img/Background-no2.jpeg);
+  background-image: url(../assets/baru/komponen.jpg);
   /* background-color: #f3f5e7; */
   background-position: 50%;
   background-size: cover;

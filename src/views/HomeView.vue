@@ -1,8 +1,8 @@
 <!-- eslint-disable prettier/prettier -->
 <template>
   <!-- taukah kamu -->
+  <div><Preloader v-if="isLoading" /></div>
   <div>
-    <Preloader v-if="isLoading" />
     <Navbar />
     <Overview />
     <Informasi />
@@ -13,7 +13,6 @@
     <Order />
     <features />
     <Futer />
-  
   </div>
 </template>
 <!-- eslint-disable prettier/prettier -->
@@ -48,12 +47,14 @@ export default {
   data() {
     return {
       isLoading: true,
+      
     }
   },
   mounted() {
     setTimeout(() => {
-      this.isLoading = false
+      this.isLoading = false   
     }, 2000)
   },
+  
 }
 </script>

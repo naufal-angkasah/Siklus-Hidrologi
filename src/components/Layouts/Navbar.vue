@@ -13,7 +13,7 @@
         <img
           class="black-logo"
           style="height: 50px"
-          src="../../assets/img/logo.png"
+          src="../../assets/baru/Logo.png"
           alt="Logo"
         />
       </router-link>
@@ -38,7 +38,7 @@
               class="nav-link"
               @click="scroll('Overview')"
               href="javascript:void(0)"
-              >Overview</a
+              >Home</a
             >
           </li>
           <li class="nav-item">
@@ -47,11 +47,6 @@
               @click="scroll('Informasi')"
               href="javascript:void(1)"
               >Informasi Umum
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" @click="scroll('P5')" href="javascript:void(6)"
-              >P5
             </a>
           </li>
           <li class="nav-item">
@@ -68,22 +63,6 @@
               @click="scroll('Kegiatan')"
               href="javascript:void(2)"
               >Kegiatan Pembelajaran</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              @click="scroll('Order')"
-              href="javascript:void(4)"
-              >Post Test</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              @click="scroll('Features')"
-              href="javascript:void(3)"
-              >Komentar</a
             >
           </li>
 

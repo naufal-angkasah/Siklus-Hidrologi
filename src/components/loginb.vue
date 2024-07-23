@@ -8,11 +8,9 @@
     <div class="begron ptb-100 rubberBand">
       <div class="container-fluid">
         <div class="row align-items-center">
-          <div class="col-lg-1 col-md-12" style="padding-left: 130px;"></div>
+          <div class="col-lg-1 col-md-12" style="padding-left: 130px"></div>
           <div class="col-lg-3 col-md-12">
-            <div
-              class="row align-items-center overview-content"
-            >
+            <div class="row align-items-center overview-content">
               <div class="card0 z-index-0">
                 <div class="card-header pt-4 p-4">
                   <h4 class="roboto-regular">Selamat Datang</h4>
@@ -28,7 +26,6 @@
                   >
                     <!-- email -->
                     <b-row class="my-2">
-                 
                       <b-col sm="12">
                         <b-form-input
                           trim
@@ -64,7 +61,6 @@
                     </b-row>
                     <!-- password -->
                     <b-row class="my-2">
-                 
                       <b-col sm="12">
                         <b-form-input
                           id="type-password"
@@ -95,20 +91,20 @@
                     </b-row>
                     <br />
                     <div class="d-grid gap-2">
-                    <CButton
-                      color="primary"
-                    
-                      @click="
-                        () => {
-                          visibleScrollableDemo = true
-                        }
-                      "
-                      >Login</CButton
-                    >
-                  </div>
+                      <CButton
+                        color="primary"
+                        @click="
+                          () => {
+                            visibleScrollableDemo = true
+                          }
+                        "
+                        >Login</CButton
+                      >
+                    </div>
                     <CModal
+                     
                       scrollable
-                      size="lg"
+                      transition="{false}"
                       :visible="visibleScrollableDemo"
                       @close="
                         () => {
@@ -214,7 +210,7 @@
                     <!-- <b-button type="reset" variant="danger">Reset</b-button> -->
                   </b-form>
                   <div class="px-1 pt-2 text-center card-footer px-lg-2">
-                    <p class="mx-auto mb-4 text-sm" style="color: black;">
+                    <p class="mx-auto mb-4 text-sm" style="color: black">
                       Belum Punya Akun?
                       <a href="/register" class="text-gradient font-weight-bold"
                         >Register</a
@@ -225,38 +221,36 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-md-12" style="padding-left: 220px; padding-top: 100px;">
+          <div class="col-lg-1 col-md-12" style="padding-left: 180px"></div>
+          <div class="col-lg-5 col-md-12">
             <div class="overview-content">
-              <div
-                class="card6 tracking-in-expand-fwd-top"
-                style="padding-top: 10px"
-              >
-                  <h4
-                    style="color: white; font-weight: 700; letter-spacing: 3px;
-word-spacing: 1.4px;"
-                    >Siswa-Siswi terbaik bangsa, di E-Modul SiklusHidrologi Terintegrasi Ayat Al-Qur'an.</h4>
-                  <p
-                    style="color: white; font-weight: 200;"
-                  >
-                  Temukan materi yang menarik dan bermanfaat tentang siklus
-                    air ini. Selamat belajar dan mari eksplorasi pengetahuan
-                    bersama!
-            </p>
-            
+              <div class="card6" style="padding-top: 40px">
+                <h4
+                  style="
+                    color: white;
+                    font-weight: 700;
+                    letter-spacing: 3px;
+                    word-spacing: 1.4px;
+                  "
+                >
+                  Siswa-Siswi terbaik bangsa, di E-Modul SiklusHidrologi
+                  Terintegrasi Ayat Al-Qur'an.
+                </h4>
+                <p style="color: white; font-weight: 200">
+                  Temukan materi yang menarik dan bermanfaat tentang siklus air
+                  ini. Selamat belajar dan mari eksplorasi pengetahuan bersama!
+                </p>
               </div>
             </div>
           </div>
-         
-          <div class="col-lg-12 col-md-12"  style="padding-left: 130px;">
+
+          <div class="col-lg-12 col-md-12" style="padding-left: 130px">
             <div class="overview-content">
-              <div class="card6" style="padding-top: 10px">
-              
-                  <p style=" font-weight: 200; color: white;"
-                    >
-                    Muhammad Khairul - Class of 2022<br />Master Pendidikan
-                    Geografi<br />Universitas Pendidikan Indonesia</p
-                  >
-            
+              <div class="card6">
+                <p style="font-weight: 200; color: white; padding-top: 10px">
+                  Muhammad Khairul - Class of 2022<br />Master Pendidikan
+                  Geografi<br />Universitas Pendidikan Indonesia
+                </p>
               </div>
             </div>
           </div>

@@ -21,22 +21,15 @@ img {
 <template>
   <div id="Informasi" class="process-style-area1 ptb-100">
     <div class="container">
-      <div class="d-flex justify-content-center fadeIn">
-        <video class="vid2" play loop controls id="myVideo">
-          <source src="../assets/Surat-ALbaqarah.mp4" type="video/mp4" />
-          Your browser does not support HTML5 video.
-        </video>
-      </div>
       <!-- <RouterLink to="/">
         <button>awikwok</button>
-      </RouterLink> -->
+      </RouterLink> --><br />
       <div class="main-section-title jackInTheBox">
         <div class="card4">
           <!-- <span class="sub-title"># STEPS & PROCESS</span> -->
           <h2>Informasi Umum</h2>
         </div>
       </div>
-
       <div class="flipInX">
         <!-- Tabs with card integration -->
         <b-card no-body>
@@ -159,7 +152,7 @@ img {
                 >
               </div></b-tab
             >
-            <b-tab title="Target Peserta didik dan Model Pembelajaran">
+            <b-tab title="Target dan Model Pembelajaran">
               <b-card1 no-body>
                 <b-tabs pills card vertical nav-wrapper-class="w-30">
                   <b-tab title="Target Peserta Didik" active

@@ -19,7 +19,7 @@ video {
       <div class="main-section-title jackInTheBox">
         <div class="card4">
           <!-- <span class="sub-title"># Kegiatan</span> -->
-          <h2>Kegiatan Pembelajaran</h2>
+          <h2 style="color: white;">Kegiatan Pembelajaran</h2>
         </div>
       </div>
 

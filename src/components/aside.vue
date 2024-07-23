@@ -3,7 +3,7 @@
 <!-- eslint-disable prettier/prettier -->
 <template>
   <aside>
-    <div class="social-media">
+    <div :class="['social-media']">
       <ul>
         <li>
           <button
@@ -191,7 +191,9 @@
 <script>
 export default {
   data() {
-    return {}
+    return {
+      isTop: false
+    }
   },
 }
 </script>
