@@ -10,7 +10,7 @@
       </div>
       <!-- ini untuk isi -->
       <div class="container2 horizontal-scroll bounceInUp">
-        <div class=" bounceInLeft left ">
+        <div class=" bounceInLeft left " style="padding-right: 30px;">
           <div class=" content horizontal-scroll" style="height:400px; width: 300px; overflow-y:scroll;">
             <h5>01. Tujuan Pembelajaran</h5>
             <p class="bold">Memahami Konsep Siklus Hidrologi :
