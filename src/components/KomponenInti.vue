@@ -5,13 +5,13 @@
       <div class="main-section-title">
         <div class="card4">
           <!-- <span class="sub-title"># STEPS & PROCESS</span> -->
-          <h2>Komponen Inti</h2>
+          <h2> Komponen Inti</h2>
         </div>
       </div>
       <!-- ini untuk isi -->
-      <div class="timeline bounceInUp">
-        <div class="container1 left bounceInLeft">
-          <div class="content1" style="position:relative; height:300px; overflow-y:scroll;">
+      <div class="container2 horizontal-scroll bounceInUp">
+        <div class=" bounceInLeft left ">
+          <div class=" content horizontal-scroll" style="height:400px; width: 300px; overflow-y:scroll;">
             <h5>01. Tujuan Pembelajaran</h5>
             <p class="bold">Memahami Konsep Siklus Hidrologi :
             <ul class="bold">
@@ -63,33 +63,37 @@
               </li>
             </ul>
             </p>
-
           </div>
+     
         </div>
-        <div class="container1 right bounceInRight">
-          <div class="content">
+        <div class=" bounceInLeft container1 left">
+ 
+          <div class=" content horizontal-scroll" style="height:400px; width: 300px; overflow-y:scroll;">
             <h5>02. Pemahaman Bermakna</h5>
+            <p class="bold">
             <ol class="bold">
               <li>
                 Menyadari pentingnya konservasi dan daya guna air pada kehidupan sehari-hari.
               </li>
               <li>
-                Mampu Menerapkan Kesadaran Lingkungan pada aspek Perilaku peduli lingkungan terhadap kehidupan sehari
-                –hari.
+                Mampu Menerapkan Kesadaran Lingkungan pada aspek Perilaku peduli lingkungan terhadap kehidupan sehari–hari.
               </li>
             </ol>
+            </p>
+
           </div>
         </div>
-        <div class="container1 left bounceInLeft">
-          <div class="content1">
+
+        <div class=" bounceInLeft container1 container2 left">
+          <div class="content horizontal-scroll" style="height:400px; width: 300px; overflow-y:scroll;">
             <h5>03. Persiapan Pembelajaran</h5>
             <p class="bold">
               Menyiapkan Perangkat Elektornik, berupa Laptop/PC atau Smartphone.
             </p>
           </div>
         </div>
-        <div class="container1 right bounceInRight">
-          <div class="content">
+        <div class="bounceInRight container1 left">
+          <div class="content horizontal-scroll" style="height:400px; width: 300px; overflow-y:scroll;">
             <h5>04. Bacaan Peserta Didik dan Guru</h5>
             <p class="bold">
               Bacaan peserta didik dan guru :
@@ -107,8 +111,8 @@
             </ol>
           </div>
         </div>
-        <div class="container1 left bounceInLeft">
-          <div class="content1">
+        <div class=" bounceInLeft container1 left">
+          <div class="content horizontal-scroll" style="height:400px; width: 300px; overflow-y:scroll;">
             <h5>05. Pertanyaan Pemantik</h5>
             <ol class="bold">
               <li>
@@ -127,6 +131,7 @@
           </div>
         </div>
       </div>
+      <br /> <br />
 
     </div>
   </div>
@@ -151,25 +156,6 @@ export default {
   font-family: Helvetica, sans-serif;
 } */
 
-/* The actual timeline (the vertical ruler) */
-.timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: #B3E0E0;
-  top: 18px;
-  bottom: 20px;
-  left: 50%;
-  margin-left: 1.5px;
-  margin-right: 1.5px;
-}
 
 /* container1 around content */
 .container1 {
@@ -187,21 +173,24 @@ export default {
   height: 25px;
   right: -17px;
   background-color: rgba(76, 210, 224,0.15);
-  border: 4px solid #13DEE0;
-  top: 15px;
-  border-radius: 50%;
+  border: 4px solid #6A2C70;
+  top: 195px;
+  border-radius: 10%;
+  border-left: transparent;
+  border-bottom: transparent;
+ rotate: 45deg;
   z-index: 1;
 }
 
 /* Place the container1 to the left */
-.left {
-  left: 0;
-}
-
-/* Place the container1 to the right */
-.right {
-  left: 50%;
-}
+.left::after, .right::after {
+  left: 0px;
+  }
+  
+  /* Make all right container1s behave like the left ones */
+  .right {
+  left: 0%;
+  }
 
 /* Add arrows to the left container1 (pointing right) */
 .left::before {
@@ -214,7 +203,7 @@ export default {
   right: 30px;
   border: medium solid rgba(76, 210, 224,0.15);
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #B3E0E0;
+  border-color: transparent transparent transparent ;
 }
 
 /* Add arrows to the right container1 (pointing left) */
@@ -228,7 +217,7 @@ export default {
   left: 30px;
   border: medium solid #B3E0E0;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #B3E0E0 transparent transparent;
+  border-color: transparent transparent transparent;
 }
 
 /* Fix the circle for container1s on the right side */
@@ -241,13 +230,16 @@ export default {
   padding: 20px 30px;
   background-color: rgba(236, 244, 245, 0.80);
   position: relative;
-  border-radius: 6px;
+  border-radius: 10px;
+  border-style:ridge;
+
 }
 .content:hover {
   box-shadow: 14px 13px 14px 0px rgba(0,0,0,0.65);
+  border-radius: 10px;
 }
 .content1 {
-  padding: 20px 30px;
+  padding: 30px 30px;
   background-color: rgba(236, 244, 245, 0.80);
   position: relative;
   border-radius: 6px;
@@ -275,8 +267,9 @@ export default {
   left: 60px;
   border: medium solid rgba(76, 210, 224,0.30);
   border-width: 10px 10px 10px 0;
-  border-color: transparent #b7b7b8 transparent transparent;
+  border-color: transparent transparent transparent;
   }
+  
 
   /* Make sure all circles are at the same spot */
   .left::after, .right::after {
